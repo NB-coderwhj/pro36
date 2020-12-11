@@ -66,7 +66,7 @@ function draw() {
   textSize(20);
   text("FoodStock = "+milk.milkStock,20,450);
   text(""+dogName,dog.x,dog.y+70/*200+110,200+220*/);
-  text(""+lastFedRef,20,20);
+  text("lastFed = "+lastFedRef,20,20);
 
    console.log(lastFedRef);
 }
