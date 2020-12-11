@@ -51,6 +51,7 @@ function setup() {
     if(milk.milkStock<30){
     milk.milkStock += 1;
     }
+    milk.updateFS(milk.milkStock);
     dog.addImage(dogImg);
   })
 }
@@ -66,7 +67,7 @@ function draw() {
   textSize(20);
   text("FoodStock = "+milk.milkStock,20,450);
   text(""+dogName,dog.x,dog.y+70/*200+110,200+220*/);
-  text("lastFed = "+lastFedRef,20,20);
+  text("last fed = "+lastFedRef,20,20);
 
    console.log(lastFedRef);
 }
